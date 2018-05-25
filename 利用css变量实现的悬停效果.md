@@ -1,4 +1,4 @@
-![hover](E:\mygit\blog\img\hover.gif)
+![hover](https://raw.githubusercontent.com/QiShaoXuan/blog/master/images/hover.gif)
 
 #### css
 
