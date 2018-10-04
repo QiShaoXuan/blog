@@ -1,0 +1,24 @@
+{
+  "name": "js_tricks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "npx vuepress dev docs",
+    "docs:build": "node ./build/addComment.js &&  vuepress build docs  && node ./build/delComment.js",
+    "deploy": "gh-pages -d dist",
+    "deploy:build": "npm run docs:build && gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "scss-loader": "^0.0.1",
+    "vuepress": "^0.14.4"
+  },
+  "dependencies": {
+    "markdown-it-include": "^1.0.0"
+  }
+}
