@@ -29,6 +29,7 @@ module.exports = {
           '/youNeedToKnowJs/documentFragment',
           '/youNeedToKnowJs/copy',
           '/youNeedToKnowJs/mutationObserver',
+          '/youNeedToKnowJs/getBoundingClientRect',
         ]
       },
     ]
