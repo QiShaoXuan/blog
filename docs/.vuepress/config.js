@@ -25,6 +25,7 @@ module.exports = {
     nav: [
       { text: 'css tricks', link: 'https://qishaoxuan.github.io/css_tricks/' },
       { text: 'js tricks', link: 'https://qishaoxuan.github.io/js_tricks/' },
+      { text: 'about me', link: 'https://qishaoxuan.github.io/animate_resume/' },
       { text: 'GitHub', link: 'https://github.com/QiShaoXuan/blog' },
     ],
     sidebar: [
@@ -32,16 +33,23 @@ module.exports = {
         title: 'JS',
         collapsable: false,
         children: [
-          '/youNeedToKnowJs/insertAdjacentHTML',
-          '/youNeedToKnowJs/implementation',
-          '/youNeedToKnowJs/messageChannel',
-          '/youNeedToKnowJs/throttleDebounce',
-          '/youNeedToKnowJs/documentFragment',
-          '/youNeedToKnowJs/copy',
-          '/youNeedToKnowJs/mutationObserver',
-          '/youNeedToKnowJs/getBoundingClientRect',
+          '/js/insertAdjacentHTML',
+          '/js/implementation',
+          '/js/messageChannel',
+          '/js/throttleDebounce',
+          '/js/documentFragment',
+          '/js/copy',
+          '/js/mutationObserver',
+          '/js/getBoundingClientRect',
         ]
       },
+      {
+        title:'HTML',
+        collapsable:false,
+        children:[
+          '/html/meta'
+        ],
+      }
     ]
   }
 }
