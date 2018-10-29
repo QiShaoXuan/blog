@@ -47,7 +47,8 @@ module.exports = {
         title:'HTML',
         collapsable:false,
         children:[
-          '/html/meta'
+          '/html/meta',
+          '/html/email',
         ],
       }
     ]
