@@ -50,6 +50,16 @@ module.exports = {
           '/html/meta',
           '/html/email',
         ],
+      },
+      {
+        title:'CSS',
+        collapsable:false,
+        children:[
+          '/css/name',
+          '/css/pseudo',
+          '/css/selector',
+          '/css/unit',
+        ],
       }
     ]
   }
