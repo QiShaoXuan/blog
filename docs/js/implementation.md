@@ -8,8 +8,9 @@ implementation 属性可返回处理该文档的 DOMImplementation 对象。
 function parseHTML(str) {
   let tmp = document.implementation.createHTMLDocument()
   tmp.body.innerHTML = str
-  return tmp.body.children
+  return tmp.body.children[0]
 }
 
 parseHTML(htmlString)
 ```
+
