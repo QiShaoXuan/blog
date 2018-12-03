@@ -60,6 +60,13 @@ module.exports = {
           '/css/selector',
           '/css/unit',
         ],
+      },
+      {
+        title:'leetcode',
+        collapsable:false,
+        children:[
+          '/leetcode/twoSum',
+        ],
       }
     ]
   }
