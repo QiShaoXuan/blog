@@ -62,6 +62,13 @@ module.exports = {
         ],
       },
       {
+        title:'other',
+        collapsable:false,
+        children:[
+          '/other/sort',
+        ],
+      },
+      {
         title:'leetcode',
         collapsable:false,
         children:[
