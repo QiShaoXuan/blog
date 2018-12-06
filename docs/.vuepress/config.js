@@ -62,10 +62,10 @@ module.exports = {
         ],
       },
       {
-        title:'other',
+        title:'basic',
         collapsable:false,
         children:[
-          '/other/sort',
+          '/basic/sort',
         ],
       },
       {
