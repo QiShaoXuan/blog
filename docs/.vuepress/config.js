@@ -30,8 +30,15 @@ module.exports = {
     ],
     sidebar: [
       {
+        title:'实现',
+        collapsable:true,
+        children:[
+          '/realize/promise'
+        ],
+      },
+      {
         title: 'JS',
-        collapsable: false,
+        collapsable: true,
         children: [
           '/js/insertAdjacentHTML',
           '/js/implementation',
@@ -45,7 +52,7 @@ module.exports = {
       },
       {
         title:'HTML',
-        collapsable:false,
+        collapsable:true,
         children:[
           '/html/meta',
           '/html/email',
@@ -53,7 +60,7 @@ module.exports = {
       },
       {
         title:'CSS',
-        collapsable:false,
+        collapsable:true,
         children:[
           '/css/name',
           '/css/pseudo',
@@ -63,14 +70,14 @@ module.exports = {
       },
       {
         title:'basic',
-        collapsable:false,
+        collapsable:true,
         children:[
           '/basic/sort',
         ],
       },
       {
         title:'leetcode',
-        collapsable:false,
+        collapsable:true,
         children:[
           '/leetcode/twoSum',
         ],
