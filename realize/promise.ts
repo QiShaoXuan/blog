@@ -6,7 +6,16 @@ interface MyPromise {
 
 
   then: (onFulfill?: any, onReject?: any) => void
+
   catch: (reason: any) => void
+
+  resolve: (val: any) => Promise
+
+  reject: (reason: any) => Promise
+
+  all: (promises: Array) => Promise
+
+  race: (promises: Array) => Promise
 }
 
 
@@ -62,7 +71,7 @@ class Promise implements MyPromise {
     }
 
     if (self.status === 'resolved') {
-      return promise2 = new Promise(function(resolve, reject) {
+      return promise2 = new Promise(function (resolve, reject) {
         try {
           var x = onFulfill(self.data)
           if (x instanceof Promise) {
@@ -76,7 +85,7 @@ class Promise implements MyPromise {
     }
 
     if (self.status === 'rejected') {
-      return promise2 = new Promise(function(resolve, reject) {
+      return promise2 = new Promise(function (resolve, reject) {
         try {
           var x = onReject(self.data)
           if (x instanceof Promise) {
@@ -103,7 +112,7 @@ class Promise implements MyPromise {
           try {
             let x = onReject(value)
             resolvePromise(promise2, x, resolve, reject)
-          }catch (e) {
+          } catch (e) {
             reject(e)
           }
         })
@@ -114,17 +123,58 @@ class Promise implements MyPromise {
   }
 
   public catch(reason) {
-    return
+    return this.then(null, onRejected)
   }
 
-  public all() {
+  public resolve(val) {
+    return new Promise((resolve, reject) => {
+      resolve(val)
+    })
   }
 
-  public race() {
+  public reject(reason) {
+    return new Promise((resolve, reject) => {
+      reject(reason)
+    })
+  }
+
+  public all(promises) {
+    let datas = []
+    let len = 0
+
+    function processData(data, index, resolve) {
+      len += 1
+      datas[index] = data
+      if (len === promises.length) {
+        resolve(datas)
+      }
+    }
+
+    return new Promise((resolve, reject) => {
+      promises.forEach((promise, index) => {
+        if (promise instanceof Promise) {
+          promise.then((data) => processData(data, index, resolve))
+        } else {
+          this.resolve(promise).then((data) => processData(data, index, resolve))
+        }
+      })
+    })
+  }
+
+  public race(promises) {
+    return new Promise((resolve, reject) => {
+      promises.forEach((promise, index) => {
+        if (promise instanceof Promise) {
+          promise.then(resolve, reject)
+        } else {
+          this.resolve(promise).then(resolve, reject)
+        }
+      })
+    })
   }
 }
 
-function resolvePromise(promise2: Function, x: Function, resolve: Function, reject: Function):void {
+function resolvePromise(promise2: Function, x: Function, resolve: Function, reject: Function): void {
   var then
   var thenCalledOrThrow = false
 
@@ -134,7 +184,7 @@ function resolvePromise(promise2: Function, x: Function, resolve: Function, reje
 
   if (x instanceof Promise) {
     if (x.status === 'pendding') {
-      x.then(function(v) {
+      x.then(function (v) {
         resolvePromise(promise2, v, resolve, reject)
       }, reject)
     } else {
