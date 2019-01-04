@@ -40,6 +40,7 @@ module.exports = {
         title: 'JS',
         collapsable: true,
         children: [
+          '/js/module',
           '/js/insertAdjacentHTML',
           '/js/implementation',
           '/js/messageChannel',
