@@ -40,6 +40,8 @@ module.exports = {
         title: 'JS',
         collapsable: true,
         children: [
+          '/js/eventloop',
+          '/js/inherit',
           '/js/module',
           '/js/insertAdjacentHTML',
           '/js/implementation',
@@ -55,6 +57,8 @@ module.exports = {
         title:'HTML',
         collapsable:true,
         children:[
+          '/html/optimal',
+          '/html/url',
           '/html/meta',
           '/html/email',
         ],
@@ -81,6 +85,7 @@ module.exports = {
         collapsable:true,
         children:[
           '/leetcode/twoSum',
+          '/leetcode/singleNumber',
         ],
       }
     ]
