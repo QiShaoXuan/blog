@@ -58,6 +58,7 @@ module.exports = {
         title:'HTML',
         collapsable:true,
         children:[
+          '/html/wx',
           '/html/optimal',
           '/html/url',
           '/html/meta',
