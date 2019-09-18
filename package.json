@@ -1,24 +1,29 @@
 {
-  "name": "js_tricks",
+  "name": "blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "npx vuepress dev docs",
-    "docs:build": "node ./build/addComment.js &&  vuepress build docs  && node ./build/delComment.js",
+    "dev": "npx vuepress dev docs",
+    "build": "vuepress build docs",
     "deploy": "gh-pages -d dist",
-    "deploy:build": "npm run docs:build && gh-pages -d dist"
+    "deploy:build": "npm run build && gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^2.0.0",
-    "node-sass": "^4.9.3",
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "@vuepress/plugin-nprogress": "^1.0.0-rc.1",
+    "element-ui": "^2.9.1",
+    "gh-pages": "^2.0.1",
+    "gitalk": "^1.5.0",
+    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
-    "scss-loader": "^0.0.1",
-    "vuepress": "^0.14.4"
+    "vuepress": "^1.0.1"
   },
   "dependencies": {
-    "markdown-it-include": "^1.0.0"
+    "clipboard": "^2.0.4",
+    "vue-i18n": "^8.14.0",
+    "vuepress-plugin-cat": "^1.0.2"
   }
 }
