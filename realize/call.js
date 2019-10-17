@@ -1,14 +1,7 @@
-Function.prototype.call = function (context) {
-  var context = context || window
+Function.prototype.call = (context = window) => {
   context.fn = this
-
-  var args = []
-  for(var i = 1, len = arguments.length ;i < len; i++) {
-    args.push('arguments[' + i + ']')
-  }
-
-  var result = eval('context.fn(' + args +')')
-
+  const args = [...arguments].slice(1)
+  const res = context.fn(args)
   delete context.fn
-  return result
+  return res
 }

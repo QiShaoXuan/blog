@@ -1,20 +1,13 @@
-Function.prototype.apply1 = function (context, arr) {
-  var context = context || window
-  context.fn = this
+Function.prototype.apply = (context = window, ...args) => {
+  context.fn = this;
+  let res;
 
-  var result
-
-  if (!arr) {
-    result = context.fn()
-  }
-  else {
-    var args = []
-    for (var i = 0, len = arr.length; i < len; i++) {
-      args.push('arr[' + i + ']');
-    }
-    result = eval('context.fn(' + args + ')')
+  if (args.length) {
+    res = context.fn(args);
+  } else {
+    res = context.fn();
   }
 
-  delete context.fn
-  return result
-}
+  delete context.fn;
+  return res;
+};

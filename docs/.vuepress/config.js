@@ -47,7 +47,7 @@ module.exports = {
       {
         title: "实现",
         collapsable: true,
-        children: ["/realize/promise", "/realize/call"]
+        children: ["/realize/promise", "/realize/call", "/realize/new"]
       },
       {
         title: "JS",
