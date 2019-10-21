@@ -1,20 +1,18 @@
-Function.prototype.bind = function (content) {
-  if (typeof this != "function") {
-    throw Error("not a function")
-  }
-  // 若没问参数类型则从这开始写
-  let fn = this;
-  let args = [...arguments].slice(1);
+Function.prototype.bind = context => {
+  const self = this;
+  const args = [].slice.call(arguments, 1);
 
-  let resFn = function () {
-    return fn.apply(this instanceof resFn ? this : content, args.concat(...arguments))
-  }
-
-  function tmp() {
+  function resFn() {
+    return self.apply(
+      this instanceof resFn ? this : context,
+      args.concat(...arguments)
+    );
   }
 
-  tmp.prototype = this.prototype;
-  resFn.prototype = new tmp();
+  function middleFn() {}
 
-  return resFn;
-}
+  middleFn.prototype = self.prototype;
+  resFn.prototype = new middleFn();
+
+  return resFn();
+};

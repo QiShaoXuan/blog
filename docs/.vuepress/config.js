@@ -47,7 +47,14 @@ module.exports = {
       {
         title: "实现",
         collapsable: true,
-        children: ["/realize/promise", "/realize/call", "/realize/new"]
+        children: [
+          "/realize/promise",
+          "/realize/call",
+          "/realize/new",
+          "/realize/bind",
+          "/realize/curry",
+          "/realize/throttleDebounce"
+        ]
       },
       {
         title: "JS",
@@ -59,7 +66,6 @@ module.exports = {
           "/js/insertAdjacentHTML",
           "/js/implementation",
           "/js/messageChannel",
-          "/js/throttleDebounce",
           "/js/documentFragment",
           "/js/copy",
           "/js/mutationObserver",
@@ -88,9 +94,9 @@ module.exports = {
         children: ["/basic/sort"]
       },
       {
-        title: "Leetcode",
+        title: "算法",
         collapsable: true,
-        children: ["/leetcode/twoSum", "/leetcode/singleNumber"]
+        children: ["/leetcode/sort","/leetcode/twoSum", "/leetcode/singleNumber"]
       },
       {
         title: "踩坑",

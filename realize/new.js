@@ -5,3 +5,4 @@ function myNew() {
   const reslut = constructor.apply(obj, arguments);
   return reslut && reslut instanceof Object ? reslut : obj;
 }
+
