@@ -1,6 +1,6 @@
 function curry(fn, ...args) {
   const length = fn.length;
-  
+
   return function() {
     let newArgs = args.concat(...arguments);
     if (newArgs.length < length) {
