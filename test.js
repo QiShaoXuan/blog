@@ -1,17 +1,20 @@
-function aa(n) {
-  if (n < 1) {
-    return 0
-  }
-  if (n === 1) {
-    return 1
-  }
+// var staff = {
+//   name: "Eva",
+//   getName: function() {
+//     return this.name;
+//   }
+// };
+// var name = staff.getName;
+//
+// console.log(name());
+// console.log(staff.getName());
 
-  if (n === 2) {
-    return 2
-  }
+const arr = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]];
 
-  return aa(n - 1) + aa(n - 2)
+
+function aa(arr) {
+  let verNum = arr.length
+  let colNum = arr[0].length
+
+
 }
-
-console.log(aa(10))
-

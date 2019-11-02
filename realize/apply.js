@@ -1,4 +1,4 @@
-Function.prototype.apply = (context = window, ...args) => {
+Function.prototype.apply = (context = window, args) => {
   context.fn = this;
   let res;
 
