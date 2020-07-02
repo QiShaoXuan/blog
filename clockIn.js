@@ -14,6 +14,8 @@ const timeReminder = ({ time, around = 0, callback = null }) => {
     targetTime - currentTime + around
   );
 
+  console.log(`将于 ${timestampToTime(currentTime + t)} 执行`);
+
   setTimeout(() => {
     callback && callback();
   }, t);
@@ -29,7 +31,12 @@ function randomNum(min, max) {
       return 0;
   }
 }
-
+function timestampToTime(timestamp = Date.parse(new Date()), isMs = true) {
+  const date = new Date(timestamp * (isMs ? 1 : 1000));
+  return `${date.getFullYear()}-${
+    date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1
+  }-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+}
 const getDate = time => {
   const date = new Date();
   return `${date.getFullYear()}/${date.getMonth() +
@@ -49,6 +56,6 @@ timeReminder({
         .querySelector("button")
         .click();
     }
-    window.close();
+    // window.close();
   }
 });
