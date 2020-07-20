@@ -44,8 +44,9 @@ const getDate = time => {
 };
 
 timeReminder({
-  time: getDate("21:00"), // 打卡时间
-  around: 30 * 60 * 1000, // 在打卡时间的阈值，time +- around
+  time: getDate("12:26"), // 打卡时间
+  // around: 30 * 60 * 1000, // 在打卡时间的阈值，time +- around
+  around: 0, // 在打卡时间的阈值，time +- around
   callback: () => {
     // 执行页面的打卡函数或直接点击按钮
     try {
