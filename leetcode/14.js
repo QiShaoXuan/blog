@@ -30,11 +30,3 @@ function getCommonByTow(str1, str2) {
   }
   return commonStr
 }
-
-
-
-const res = longestCommonPrefix(["flower", "flow", "flight"])
-// const res2 = longestCommonPrefix(["dog", "racecar", "car"])
-
-console.log('res', res);
-// console.log('res2', res2);
