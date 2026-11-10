@@ -1,14 +1,14 @@
 # 选择器
 
-伪类和伪元素选择器见<a href="../pseudo/">伪类和伪元素</a>
+伪类和伪元素选择器见[伪类和伪元素](./pseudo.md)
 
 ## `>`
 选择容器下的直接子代，而不是如`.container ul`选择所有符合条件的后代
 
-## `+`
+## `+` {#-2}
 选择紧临的下一个兄弟元素
 
-## `~`
+## `~` {#-3}
 选择随后的所有兄弟元素
 
 ## `X[attribute]`
@@ -23,15 +23,15 @@
 ## `X[attribute="yyy"]`
 选择所有attribute属性值为yyy的元素
 
-## `X[attribute^="yyy"]`
+## `X[attribute^="yyy"]` {#x-attribute-yyy-2}
 选择所有attribute属性值为yyy开头的元素
 
-## `X[attribute*="yyy"]`
+## `X[attribute*="yyy"]` {#x-attribute-yyy-3}
 选择所有attribute属性值包含yyy的元素
 
-## `X[attribute$="yyy"]`
+## `X[attribute$="yyy"]` {#x-attribute-yyy-4}
 选择所有attribute属性值为yyy结尾的元素
 
-## `X[attribute~="yyy"]`
+## `X[attribute~="yyy"]` {#x-attribute-yyy-5}
 选择所有attribute以空格分割的属性值中包含yyy的元素
 

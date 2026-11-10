@@ -1,5 +1,5 @@
 # call && apply
 
 
-<<< ./realize/call.js
-<<< ./realize/apply.js
+<<< ../../realize/call.js
+<<< ../../realize/apply.js

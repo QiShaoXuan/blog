@@ -15,6 +15,6 @@
 
 ## 解
 
-<<< ./leetcode/1.js
+<<< ../../leetcode/1.js
 
 

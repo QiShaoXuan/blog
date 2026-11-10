@@ -34,7 +34,7 @@
 
 ## http-equiv
 
-### 设定网页的到期时间。一旦网页过期，必须到服务器上重新传输
+### 设定网页的到期时间。一旦网页过期，必须到服务器上重新传输 {#设定网页的到期时间。一旦网页过期，必须到服务器上重新传输}
 ```html
 <meta http-equiv="expires" content="Fri,12Jan200118:18:18GMT"/> 
 ```
@@ -48,7 +48,7 @@
 <meta http-equiv="Refresh" content="1;URL=https://github.com/QiShaoXuan"/>
 ```
 
-### 如果网页过期，那么存盘的cookie将被删除
+### 如果网页过期，那么存盘的cookie将被删除 {#如果网页过期，那么存盘的cookie将被删除}
 必须使用GMT的时间格式
 ```html
 <meta http-equiv="Set-Cookie" content="cookie value=xxx;expires=Friday,12-Jan-200118:18:18GMT；path=/"/>
@@ -76,7 +76,7 @@
 <meta name="apple-mobile-web-app-title" content="blog from Qi"/>
 ```
 
-### 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏
+### 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 {#是否启用-webapp-全屏模式，删除苹果默认的工具栏和菜单栏}
 ```html
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 ```

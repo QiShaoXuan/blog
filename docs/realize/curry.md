@@ -1,3 +1,3 @@
 # 柯里化
 
-<<< ./realize/curry.js
+<<< ../../realize/curry.js

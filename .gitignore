@@ -8,3 +8,5 @@ TODOs.md
 .vscode
 dist
 config.js
+
+/docs/.vitepress/cache/

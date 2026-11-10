@@ -6,7 +6,7 @@
 
 常用于滚动条滚动监听等
 
-<<< ./realize/throttle.js
+<<< ../../realize/throttle.js
 
 ##  函数防抖 debounce
 
@@ -16,7 +16,7 @@
 
 常用于用户输入验证等
 
-<<< ./realize/debounce.js
+<<< ../../realize/debounce.js
 
 :::tip
 <a href="http://demo.nimius.net/debounce_throttle/">查看 `throttle` 和 `debounce` 可视化的差异</a>

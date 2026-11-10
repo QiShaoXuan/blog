@@ -7,7 +7,7 @@
 :::
 
 
-<<< ./realize/promise.ts
+<<< ../../realize/promise.ts
 
 ### 参考
 [Promise之你看得懂的Promise](https://juejin.im/post/5b32f552f265da59991155f0?tdsourcetag=s_pctim_aiomsg)
