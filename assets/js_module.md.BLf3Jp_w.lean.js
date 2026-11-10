@@ -1,0 +1,1 @@
+import{_ as a,o as n,c as l,a2 as p}from"./chunks/framework.D52qfWmk.js";const d=JSON.parse('{"title":"模块","description":"","frontmatter":{},"headers":[],"relativePath":"js/module.md","filePath":"js/module.md"}'),o={name:"js/module.md"};function e(c,s,t,r,E,y){return n(),l("div",null,[...s[0]||(s[0]=[p("",53)])])}const F=a(o,[["render",e]]);export{d as __pageData,F as default};

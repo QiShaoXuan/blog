@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r,a2 as i}from"./chunks/framework.D52qfWmk.js";const s=JSON.parse('{"title":"单位","description":"","frontmatter":{},"headers":[],"relativePath":"css/unit.md","filePath":"css/unit.md"}'),h={name:"css/unit.md"};function o(n,a,l,c,d,m){return t(),r("div",null,[...a[0]||(a[0]=[i("",36)])])}const u=e(h,[["render",o]]);export{s as __pageData,u as default};

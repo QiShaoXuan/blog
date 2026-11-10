@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r,a2 as o}from"./chunks/framework.D52qfWmk.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"when/index.md","filePath":"when/readme.md"}'),i={name:"when/index.md"};function l(n,a,d,s,_,h){return t(),r("div",null,[...a[0]||(a[0]=[o("",5)])])}const f=e(i,[["render",l]]);export{m as __pageData,f as default};

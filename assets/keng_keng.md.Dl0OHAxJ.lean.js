@@ -1,0 +1,1 @@
+import{_ as a,o as n,c as l,a2 as o}from"./chunks/framework.D52qfWmk.js";const d=JSON.parse('{"title":"记录","description":"","frontmatter":{},"headers":[],"relativePath":"keng/keng.md","filePath":"keng/keng.md"}'),p={name:"keng/keng.md"};function e(c,s,t,r,E,i){return n(),l("div",null,[...s[0]||(s[0]=[o("",5)])])}const F=a(p,[["render",e]]);export{d as __pageData,F as default};

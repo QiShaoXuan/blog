@@ -1,0 +1,1 @@
+import{_ as n,o as a,c as p,a2 as l}from"./chunks/framework.D52qfWmk.js";const F=JSON.parse('{"title":"深拷贝 & 浅拷贝","description":"","frontmatter":{},"headers":[],"relativePath":"js/copy.md","filePath":"js/copy.md"}'),o={name:"js/copy.md"};function e(c,s,t,E,r,y){return a(),p("div",null,[...s[0]||(s[0]=[l("",6)])])}const b=n(o,[["render",e]]);export{F as __pageData,b as default};

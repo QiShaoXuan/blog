@@ -1,0 +1,1 @@
+import{_ as e,o as l,c as i,a2 as o}from"./chunks/framework.D52qfWmk.js";const u=JSON.parse('{"title":"命名规则","description":"","frontmatter":{},"headers":[],"relativePath":"css/name.md","filePath":"css/name.md"}'),t={name:"css/name.md"};function r(h,a,d,n,s,c){return l(),i("div",null,[...a[0]||(a[0]=[o("",54)])])}const b=e(t,[["render",r]]);export{u as __pageData,b as default};
